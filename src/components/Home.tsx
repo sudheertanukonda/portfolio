@@ -18,7 +18,7 @@ const Home: React.FC<HomeProps> = ({ setActiveSection }) => {
           </h2>
         </div>
         <p className="text-lg text-gray-300 leading-relaxed max-w-2xl">
-          As an experienced Power BI Developer, I turn complex data into clear and useful insights with interactive dashboards and reports. I work with Power BI, DAX, Power Query, and MySQL to improve data models and make processes more efficient. My reports help businesses make smart decisions and grow. I stay updated with the latest Power BI features to create better and more effective solutions
+         As an experienced Power BI Developer, I specialize in transforming complex data into actionable insights through custom reports and interactive dashboards. Using Power BI, DAX, and Power Query, I provide real-time analytics that support data-driven decision-making. I focus on optimizing report performance, user experience, and data security, including implementing Row-Level Security (RLS). I work closely with stakeholders to deliver tailored solutions that drive business growth and operational efficiency.
         </p>
         <div className="flex gap-4 justify-center md:justify-start">
           <button
