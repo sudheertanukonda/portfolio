@@ -17,7 +17,7 @@ const NavBar: React.FC<NavBarProps> = ({
   const navItems = ['home', 'about', 'education', 'skills', 'experience', 'projects', 'resume', 'contact'];
 
   return (
-    <nav className="fixed w-full bg-gray-900/50 backdrop-blur-lg z-50">
+    <nav className="w-full bg-gray-900/50 backdrop-blur-lg z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -51,7 +51,7 @@ const NavBar: React.FC<NavBarProps> = ({
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden absolute w-full left-0 top-20 bg-gray-900/95 backdrop-blur-lg">
+          <div className="md:hidden absolute w-full left-0 bg-gray-900/95 backdrop-blur-lg">
             <div className="px-4 py-4 space-y-2">
               {navItems.map((item) => (
                 <button
