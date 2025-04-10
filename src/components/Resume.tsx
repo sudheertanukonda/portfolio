@@ -7,7 +7,7 @@ const Resume = () => {
   // View Resume Link (Google Drive)
   const resumeViewLink = "https://drive.google.com/file/d/1QeRFHRTjvWtpzW_dFjgmzyD9VItfUsMw/view?usp=sharing";
 
-  // ✅ New GitHub raw URL for downloading the resume
+  // ✅ Final GitHub raw URL for downloading the resume
   const resumeDownloadLink = "https://raw.githubusercontent.com/sudheertanukonda/resume/main/Sudheer_Tanukonda_resume.pdf";
 
   const handleDownloadClick = () => {
