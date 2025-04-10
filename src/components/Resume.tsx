@@ -4,11 +4,11 @@ import { Download, Eye } from 'lucide-react';
 const Resume = () => {
   const [downloaded, setDownloaded] = useState(false);
 
-  // Google Drive link (for viewing the resume)
-  const resumeViewLink = "https://drive.google.com/file/d/1d-a6GvVe0NE6bjJp4JThp5g2paN5CotC/view?usp=sharing"; // Updated view link
+  // ✅ Updated Google Drive link (for viewing the resume)
+  const resumeViewLink = "https://drive.google.com/file/d/1QeRFHRTjvWtpzW_dFjgmzyD9VItfUsMw/view?usp=sharing";
 
   // GitHub raw URL (for downloading the new resume)
-  const resumeDownloadLink = "https://raw.githubusercontent.com/sudheertanukonda/resume/main/sudheer_resume.pdf"; // New resume download link
+  const resumeDownloadLink = "https://raw.githubusercontent.com/sudheertanukonda/resume/main/sudheer_resume.pdf";
 
   // Handle the download button click
   const handleDownloadClick = () => {
