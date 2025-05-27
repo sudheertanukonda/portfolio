@@ -4,18 +4,21 @@ import { Download, Eye } from 'lucide-react';
 const Resume = () => {
   const [downloaded, setDownloaded] = useState(false);
 
-  // View Resume Link (Google Drive)
-  const resumeViewLink = "https://drive.google.com/file/d/1QeRFHRTjvWtpzW_dFjgmzyD9VItfUsMw/view?usp=sharing";
+  // Updated Google Drive View Link
+  const resumeViewLink = "https://drive.google.com/file/d/1mQhDxh1mPlNW_aTf2W7n6l8y_XBPX1cH/view?usp=sharing";
 
-  // ✅ Final GitHub raw URL for downloading the resume
-  const resumeDownloadLink = "https://raw.githubusercontent.com/sudheertanukonda/resume/main/Sudheer_Tanukonda_resume.pdf";
+  // Updated GitHub raw URL for downloading the resume
+  // Note: GitHub raw URLs have this pattern: 
+  // https://raw.githubusercontent.com/{username}/{repo}/{branch}/{file}
+  // Your provided URL is the repo clone URL, so I'll convert it accordingly:
+  const resumeDownloadLink = "https://raw.githubusercontent.com/sudheertanukonda/resume/main/Sudheer_Power%20BI%20Developer.pdf";
 
   const handleDownloadClick = () => {
     setDownloaded(true);
 
     const link = document.createElement('a');
     link.href = resumeDownloadLink;
-    link.download = 'Sudheer_Tanukonda_Resume.pdf';
+    link.download = 'Sudheer_Power BI Developer.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
