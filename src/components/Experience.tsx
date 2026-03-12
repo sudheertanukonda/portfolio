@@ -19,6 +19,25 @@ const Experience = () => {
         "Utilized Power BI Service for collaboration, sharing reports, and creating dashboards accessible to all stakeholders."
       ]
     },
+
+    {
+      title: "Power BI Developer",
+      company: "MedintelX",
+      project: "Healthcare Data Analytics & Business Intelligence Reporting",
+      period: "2025(July) - Current",
+      location: "Hyderabad, India",
+      companyLogo: "2wCEAAkGBw8QEhAPDxAVFQ8VFRUVEBUVFRcWERETFRYWFhcXGBkYHTQiHR8lHxcXITQhJSo3MC4uFx8zODMsNzQtLisBCgoKDg0OGhAQGysdHx4tLSstLS03KysrMS0rKystLS0rLS0tLS0tKy0tLS0tKys3LTUtLS0tLS0tLi4tNy0tLf",
+      responsibilities: [
+        "Developing and maintaining Power BI dashboards for healthcare analytics and operational reporting.",
+        "Connecting Power BI with multiple data sources such as SQL Server, Excel, and cloud databases.",
+        "Designing efficient data models and writing optimized DAX measures for KPI tracking and advanced analytics.",
+        "Performing data transformation and cleansing using Power Query to ensure high data quality.",
+        "Automating scheduled data refresh and monitoring report performance in Power BI Service.",
+        "Collaborating with business and healthcare teams to understand reporting requirements and deliver actionable insights.",
+        "Enhancing dashboard usability by implementing drill-through, slicers, filters, and interactive visualizations."
+      ]
+    }
+
   ];
 
   return (
