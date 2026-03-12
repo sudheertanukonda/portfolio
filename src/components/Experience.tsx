@@ -42,23 +42,22 @@ const Experience = () => {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen flex items-start justify-center pt-8">
-      <div className="max-w-5xl w-full px-6 py-8">
-        {/* Adjusted Font Size & Moved Up */}
+      <div className="max-w-7xl w-full px-6 py-8">
+        
         <h2 className="text-4xl font-bold mb-8 text-center bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
           Work Experience
         </h2>
 
-        <div className="space-y-10">
+        {/* Changed layout here */}
+        <div className="grid md:grid-cols-2 gap-10">
           {experiences.map((exp, index) => (
             <div key={index} className="relative group">
-              {/* Glowing Border Effect */}
+
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl blur-lg opacity-20 group-hover:opacity-80 transition duration-500"></div>
 
-              {/* Experience Card */}
               <div className="relative bg-gray-800/60 backdrop-blur-lg rounded-2xl p-8 border border-gray-700 shadow-lg hover:shadow-cyan-500/30 hover:scale-[1.03] transition-all duration-300">
                 <div className="flex items-start gap-6">
                   
-                  {/* Company Logo */}
                   <div className="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 border-2 border-cyan-400 shadow-md shadow-cyan-500/30 transform transition-transform group-hover:rotate-3">
                     <img 
                       src={exp.companyLogo} 
@@ -67,7 +66,6 @@ const Experience = () => {
                     />
                   </div>
 
-                  {/* Experience Details */}
                   <div className="flex-1">
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                       <div>
@@ -76,25 +74,21 @@ const Experience = () => {
                         </h3>
                         <p className="text-lg text-gray-300">{exp.company}</p>
 
-                        {/* Location */}
                         <div className="flex items-center gap-2 text-gray-400 mt-2">
                           <MapPin size={20} className="text-cyan-400" />
                           <span className="font-medium">{exp.location}</span>
                         </div>
                       </div>
 
-                      {/* Period */}
                       <span className="text-md text-cyan-400 font-semibold mt-2 md:mt-0 bg-gray-700 px-3 py-1 rounded-md shadow-md shadow-cyan-400/30">
                         {exp.period}
                       </span>
                     </div>
 
-                    {/* Project Name */}
                     {exp.project && (
                       <p className="text-md text-gray-400 italic mt-2 mb-4 font-light">{exp.project}</p>
                     )}
 
-                    {/* Responsibilities List */}
                     <ul className="space-y-3">
                       {exp.responsibilities.map((resp, idx) => (
                         <li 
@@ -106,6 +100,7 @@ const Experience = () => {
                         </li>
                       ))}
                     </ul>
+
                   </div>
                 </div>
               </div>
@@ -113,8 +108,8 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* Decorative Bottom Line */}
         <div className="mt-8 h-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 rounded-full w-3/4 mx-auto"></div>
+
       </div>
     </div>
   );
